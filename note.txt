@@ -1,0 +1,21 @@
+1、
+mod_rewrite
+一个基于一定规则的实时重写URL请求的引擎
+此模块提供了一个基于正则表达式分析器的重写引擎来实时重写URL请求。
+它支持每个完整规则可以拥有不限数量的子规则以及附加条件规则的灵活而且强大的URL操作机制。
+此模块可以操作URL的所有部分(包括路径信息部分)，
+在服务器级的(httpd.conf)和目录级的(.htaccess)配置都有效，还可以生成最终请求字符串。
+2、
+'PHP_SELF' 当前执行脚本的文件名，与 document root 有关。
+例如，在地址为 http://example.com/test.php/foo.bar 的脚本中使用 $_SERVER['PHP_SELF'] 
+将得到 /test.php/foo.bar。
+__FILE__ 常量包含当前(例如包含)文件的完整路径和文件名。
+3、
+'SERVER_ADDR'当前运行脚本所在的服务器的 IP 地址。
+'REQUEST_TIME'请求开始时的时间戳。
+'QUERY_STRING' query string（查询字符串），如果有的话，通过它进行页面访问。?与#之间的
+'HTTP_REFERER'引导用户代理到当前页的前一页的地址（不可信）
+'REMOTE_ADDR'浏览当前页面的用户的 IP 地址。
+'SCRIPT_NAME' 包含当前脚本的路径。这在页面需要指向自己时非常有用。__FILE__ 常量包含当前脚本(例如包含文件)的完整路径和文件名。 
+'REQUEST_URI' URI 用来指定要访问的页面。
+
